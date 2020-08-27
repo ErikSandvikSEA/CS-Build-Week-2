@@ -1,4 +1,4 @@
-var generate = function(numRows) {
+var pascalsTriangle = function(numRows) {
     const rows = []
     for(let i = 0; i<numRows; i++){
         //first row
