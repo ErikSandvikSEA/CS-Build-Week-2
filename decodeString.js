@@ -6,15 +6,17 @@ function decodeString(s){
             let decoded = getInner(stack);
             let num = getNum(stack);
             let repeated = decoded.repeat(num);
-            
-            stack.push(repeated);
 
+            stack.push(repeated);
+        
         } else stack.push(char);
     }
     let result = '';
+
     while(stack.length > 0){
         result = stack.pop() + result   
     }
+    
     return result;
 };
 
